@@ -1,0 +1,1174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="AnimationCreator" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5beb937d-39b1-4065-a70a-3bf4f87bc9e4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/AnimationCreator10.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/AnimationCreator10.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/AnimationCreator10.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/build/AnimationCreator10.jnlp" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/AnimationCreator10$Main.ic" NAME="Main Coverage Results" MODIFIED="1534343319316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fx/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="575" column="46" selection-start-line="575" selection-start-column="46" selection-end-line="576" selection-end-column="29" />
+              <folding>
+                <element signature="e#2273#2437#0" />
+                <element signature="e#11655#11923#0" />
+                <element signature="e#11929#12164#0" />
+                <element signature="e#12170#12704#0" />
+                <element signature="e#12710#13805#0" />
+                <element signature="e#13811#14245#0" />
+                <element signature="e#14251#14572#0" />
+                <element signature="e#14578#14963#0" />
+                <element signature="e#14969#15427#0" />
+                <element signature="e#15433#16486#0" />
+                <element signature="e#22350#22577#0" />
+                <element signature="e#22583#23204#0" />
+                <element signature="e#23209#23462#0" />
+                <element signature="e#23467#24122#0" />
+                <element signature="e#24128#24364#0" />
+                <element signature="e#24370#25110#0" />
+                <element signature="e#25336#25455#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnimationCreatorRGB.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/util/AnimationCreatorRGB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1292">
+              <caret line="83" column="114" selection-start-line="83" selection-start-column="114" selection-end-line="83" selection-end-column="114" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LayerDisplay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fx/LayerDisplay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="58" column="66" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
+              <folding>
+                <element signature="method#LedDrag#0;class#LayerDisplay#0" />
+                <element signature="method#LedClicked#0;class#LayerDisplay#0" />
+                <element signature="method#setRGBs#0;class#LayerDisplay#0" />
+                <element signature="method#setLed#0;class#LayerDisplay#0" />
+                <element signature="method#getColors#0;class#LayerDisplay#0" />
+                <element signature="method#setColors#0;class#LayerDisplay#0" />
+                <element signature="method#setRGBs#1;class#LayerDisplay#0" />
+                <element signature="method#getRGBs#0;class#LayerDisplay#0" />
+                <element signature="method#printRGBs#0;class#LayerDisplay#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View3D.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/demo3d/View3D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1836">
+              <caret line="133" column="34" selection-start-line="133" selection-start-column="29" selection-end-line="133" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#createMaterial#0;class#View3D#0" />
+                <element signature="method#handleKeyboard#0;class#View3D#0" />
+                <element signature="method#setLEDs#0;class#View3D#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnimationCreator.iml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AnimationCreator.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cube3D.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/demo3d/Cube3D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Frame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fx/Frame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+              <folding>
+                <element signature="method#Frame#0;class#Frame#0" />
+                <element signature="method#setRGBs#0;class#Frame#0" />
+                <element signature="e#515#516#0" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
+                <element signature="method#setFill#0;class#Frame#0" />
+                <element signature="method#clone#0;class#Frame#0" />
+                <element signature="method#clone#1;class#Frame#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyCustomColorPicker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fx/MyCustomColorPicker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1802">
+              <caret line="126" column="42" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="color.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fx/color.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1394">
+              <caret line="82" selection-start-line="82" selection-end-line="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>system.out</find>
+      <find>syste</find>
+      <find>color-new-rect</find>
+      <find>catch</find>
+      <find>view3D.</find>
+      <find>View 3D</find>
+      <find>backgroun</find>
+      <find>print</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Philipp Kessler" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/fx/color.css" />
+        <option value="$PROJECT_DIR$/src/demo3d/Fx3DShapeExample1.java" />
+        <option value="$PROJECT_DIR$/src/demo3d/MoleculeSampleApp1.java" />
+        <option value="$PROJECT_DIR$/src/fx/MyCustomColorPicker.java" />
+        <option value="$PROJECT_DIR$/src/demo3d/Cube3D.java" />
+        <option value="$PROJECT_DIR$/src/fx/LayerDisplay.java" />
+        <option value="$PROJECT_DIR$/src/util/AnimationCreatorRGB.java" />
+        <option value="$PROJECT_DIR$/src/fx/Main.java" />
+        <option value="$PROJECT_DIR$/src/demo3d/View3D.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="685" />
+    <option name="width" value="1242" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AnimationCreator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimationCreator" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Programme\Arduino\RGB LED Cube\AnimationCreator10\src\util" />
+      <recent name="F:\Programme\Arduino\RGB LED Cube\AnimationCreator10\src\fx" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Fx3DShapeExample1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo3d.Fx3DShapeExample1" />
+      <module name="AnimationCreator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo3d.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="fx.Main" />
+      <module name="AnimationCreator" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration name="MoleculeSampleApp1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo3d.MoleculeSampleApp1" />
+      <module name="AnimationCreator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo3d.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="View3D" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo3d.View3D" />
+      <module name="AnimationCreator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo3d.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Fx3DShapeExample1" />
+      <item itemvalue="Application.View3D" />
+      <item itemvalue="Application.MoleculeSampleApp1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.View3D" />
+        <item itemvalue="Application.MoleculeSampleApp1" />
+        <item itemvalue="Application.Fx3DShapeExample1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5beb937d-39b1-4065-a70a-3bf4f87bc9e4" name="Default" comment="" />
+      <created>1533829707680</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533829707680</updated>
+      <workItem from="1533829717733" duration="1146000" />
+      <workItem from="1533896272031" duration="17355000" />
+      <workItem from="1533985851090" duration="3262000" />
+      <workItem from="1534328569294" duration="13078000" />
+      <workItem from="1534413895728" duration="3018000" />
+      <workItem from="1534424592391" duration="3373000" />
+      <workItem from="1534509477434" duration="118000" />
+      <workItem from="1534681866277" duration="1067000" />
+      <workItem from="1534779868079" duration="729000" />
+      <workItem from="1535298060732" duration="817000" />
+      <workItem from="1538513250019" duration="1555000" />
+      <workItem from="1538935352919" duration="2035000" />
+      <workItem from="1539002061680" duration="22000" />
+      <workItem from="1539002416639" duration="1476000" />
+      <workItem from="1539080312716" duration="2606000" />
+      <workItem from="1539444557155" duration="655000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added Source + Build">
+      <created>1535298285708</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1535298285708</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="52312000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="685" y="0" width="1242" height="1047" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3295711" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20316027" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14213198" />
+      <window_info anchor="bottom" id="Statistic" order="7" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34198645" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32932165" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295711" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Image Layers" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20316027" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" order="9" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14213198" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3295711" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32932165" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295711" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34198645" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Source + Build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Source + Build" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="97" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="cube.children" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/demo3d/Cube3D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="method#Frame#0;class#Frame#0" />
+            <element signature="method#setRGBs#0;class#Frame#0" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="method#setFill#0;class#Frame#0" />
+            <element signature="method#clone#0;class#Frame#0" />
+            <element signature="method#clone#1;class#Frame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/MyCustomColorPicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="126" column="42" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/color.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4624">
+          <caret line="462" column="5" selection-start-line="462" selection-start-column="5" selection-end-line="462" selection-end-column="5" />
+          <folding>
+            <element signature="e#2273#2437#0" />
+            <element signature="e#11655#11923#0" />
+            <element signature="e#11929#12164#0" />
+            <element signature="e#12170#12704#0" />
+            <element signature="e#12710#13805#0" />
+            <element signature="e#13811#14245#0" />
+            <element signature="e#14251#14572#0" />
+            <element signature="e#14578#14963#0" />
+            <element signature="e#14969#15427#0" />
+            <element signature="e#15433#16486#0" />
+            <element signature="e#22350#22577#0" />
+            <element signature="e#22583#23204#0" />
+            <element signature="e#23209#23462#0" />
+            <element signature="e#23467#24122#0" />
+            <element signature="e#24128#24364#0" />
+            <element signature="e#24370#25110#0" />
+            <element signature="e#25336#25455#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/LayerDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="30" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
+          <folding>
+            <element signature="method#LedDrag#0;class#LayerDisplay#0" />
+            <element signature="method#LedClicked#0;class#LayerDisplay#0" />
+            <element signature="method#setRGBs#0;class#LayerDisplay#0" />
+            <element signature="method#setLed#0;class#LayerDisplay#0" />
+            <element signature="method#getColors#0;class#LayerDisplay#0" />
+            <element signature="method#setColors#0;class#LayerDisplay#0" />
+            <element signature="method#setRGBs#1;class#LayerDisplay#0" />
+            <element signature="method#getRGBs#0;class#LayerDisplay#0" />
+            <element signature="method#printRGBs#0;class#LayerDisplay#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo3d/Cube3D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="method#Frame#0;class#Frame#0" />
+            <element signature="method#setRGBs#0;class#Frame#0" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="method#setFill#0;class#Frame#0" />
+            <element signature="method#clone#0;class#Frame#0" />
+            <element signature="method#clone#1;class#Frame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/MyCustomColorPicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="126" column="42" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/color.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo3d/View3D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createMaterial#0;class#View3D#0" />
+            <element signature="method#handleKeyboard#0;class#View3D#0" />
+            <element signature="method#setLEDs#0;class#View3D#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8211">
+          <caret line="483" column="40" selection-start-line="483" selection-start-column="40" selection-end-line="483" selection-end-column="40" />
+          <folding>
+            <element signature="e#2273#2437#0" />
+            <element signature="e#11655#11923#0" />
+            <element signature="e#11929#12164#0" />
+            <element signature="e#12170#12704#0" />
+            <element signature="e#12710#13805#0" />
+            <element signature="e#13811#14245#0" />
+            <element signature="e#14251#14572#0" />
+            <element signature="e#14578#14963#0" />
+            <element signature="e#14969#15427#0" />
+            <element signature="e#15433#16486#0" />
+            <element signature="e#22350#22577#0" />
+            <element signature="e#22583#23204#0" />
+            <element signature="e#23209#23462#0" />
+            <element signature="e#23467#24122#0" />
+            <element signature="e#24128#24364#0" />
+            <element signature="e#24370#25110#0" />
+            <element signature="e#25336#25455#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/LayerDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1683">
+          <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+          <folding>
+            <element signature="method#LedDrag#0;class#LayerDisplay#0" />
+            <element signature="method#LedClicked#0;class#LayerDisplay#0" />
+            <element signature="method#setRGBs#0;class#LayerDisplay#0" />
+            <element signature="method#setLed#0;class#LayerDisplay#0" />
+            <element signature="method#getColors#0;class#LayerDisplay#0" />
+            <element signature="method#setColors#0;class#LayerDisplay#0" />
+            <element signature="method#setRGBs#1;class#LayerDisplay#0" />
+            <element signature="method#getRGBs#0;class#LayerDisplay#0" />
+            <element signature="method#printRGBs#0;class#LayerDisplay#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/AnimationCreatorRGB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo3d/View3D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2108">
+          <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createMaterial#0;class#View3D#0" />
+            <element signature="method#handleKeyboard#0;class#View3D#0" />
+            <element signature="method#setLEDs#0;class#View3D#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo3d/Cube3D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="method#Frame#0;class#Frame#0" />
+            <element signature="method#setRGBs#0;class#Frame#0" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="method#setFill#0;class#Frame#0" />
+            <element signature="method#clone#0;class#Frame#0" />
+            <element signature="method#clone#1;class#Frame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/MyCustomColorPicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3808">
+          <caret line="224" selection-start-line="224" selection-end-line="224" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/color.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="34" lean-forward="true" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+          <folding>
+            <element signature="e#2273#2437#0" />
+            <element signature="e#11655#11923#0" />
+            <element signature="e#11929#12164#0" />
+            <element signature="e#12170#12704#0" />
+            <element signature="e#12710#13805#0" />
+            <element signature="e#13811#14245#0" />
+            <element signature="e#14251#14572#0" />
+            <element signature="e#14578#14963#0" />
+            <element signature="e#14969#15427#0" />
+            <element signature="e#15433#16486#0" />
+            <element signature="e#22350#22577#0" />
+            <element signature="e#22583#23204#0" />
+            <element signature="e#23209#23462#0" />
+            <element signature="e#23467#24122#0" />
+            <element signature="e#24128#24364#0" />
+            <element signature="e#24370#25110#0" />
+            <element signature="e#25336#25455#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/LayerDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+          <folding>
+            <element signature="method#LedDrag#0;class#LayerDisplay#0" />
+            <element signature="method#LedClicked#0;class#LayerDisplay#0" />
+            <element signature="method#setRGBs#0;class#LayerDisplay#0" />
+            <element signature="method#setLed#0;class#LayerDisplay#0" />
+            <element signature="method#getColors#0;class#LayerDisplay#0" />
+            <element signature="method#setColors#0;class#LayerDisplay#0" />
+            <element signature="method#setRGBs#1;class#LayerDisplay#0" />
+            <element signature="method#getRGBs#0;class#LayerDisplay#0" />
+            <element signature="method#printRGBs#0;class#LayerDisplay#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/AnimationCreatorRGB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" column="48" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="method#Frame#0;class#Frame#0" />
+            <element signature="method#setRGBs#0;class#Frame#0" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="method#setFill#0;class#Frame#0" />
+            <element signature="method#clone#0;class#Frame#0" />
+            <element signature="method#clone#1;class#Frame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/MyCustomColorPicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3808">
+          <caret line="224" selection-start-line="224" selection-end-line="224" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/color.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4488">
+          <caret line="264" selection-start-line="264" selection-end-line="264" />
+          <folding>
+            <element signature="e#2273#2437#0" />
+            <element signature="e#11655#11923#0" />
+            <element signature="e#11929#12164#0" />
+            <element signature="e#12170#12704#0" />
+            <element signature="e#12710#13805#0" />
+            <element signature="e#13811#14245#0" />
+            <element signature="e#14251#14572#0" />
+            <element signature="e#14578#14963#0" />
+            <element signature="e#14969#15427#0" />
+            <element signature="e#15433#16486#0" />
+            <element signature="e#22350#22577#0" />
+            <element signature="e#22583#23204#0" />
+            <element signature="e#23209#23462#0" />
+            <element signature="e#23467#24122#0" />
+            <element signature="e#24128#24364#0" />
+            <element signature="e#24370#25110#0" />
+            <element signature="e#25336#25455#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/MyCustomColorPicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3944">
+          <caret line="232" column="28" selection-start-line="232" selection-start-column="28" selection-end-line="232" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/color.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4029">
+          <caret line="237" column="10" selection-start-line="237" selection-start-column="10" selection-end-line="237" selection-end-column="10" />
+          <folding>
+            <element signature="e#2273#2437#0" />
+            <element signature="e#11655#11923#0" />
+            <element signature="e#11929#12164#0" />
+            <element signature="e#12170#12704#0" />
+            <element signature="e#12710#13805#0" />
+            <element signature="e#13811#14245#0" />
+            <element signature="e#14251#14572#0" />
+            <element signature="e#14578#14963#0" />
+            <element signature="e#14969#15427#0" />
+            <element signature="e#15433#16486#0" />
+            <element signature="e#22350#22577#0" />
+            <element signature="e#22583#23204#0" />
+            <element signature="e#23209#23462#0" />
+            <element signature="e#23467#24122#0" />
+            <element signature="e#24128#24364#0" />
+            <element signature="e#24370#25110#0" />
+            <element signature="e#25336#25455#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/MyCustomColorPicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2686">
+          <caret line="158" column="25" selection-start-line="158" selection-start-column="25" selection-end-line="158" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/AnimationCreatorRGB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" column="44" selection-start-line="76" selection-start-column="44" selection-end-line="76" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/LayerDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3281">
+          <caret line="193" column="5" lean-forward="true" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
+          <folding>
+            <element signature="method#LedDrag#0;class#LayerDisplay#0" />
+            <element signature="method#LedClicked#0;class#LayerDisplay#0" />
+            <element signature="method#setRGBs#0;class#LayerDisplay#0" />
+            <element signature="method#setLed#0;class#LayerDisplay#0" />
+            <element signature="method#getColors#0;class#LayerDisplay#0" />
+            <element signature="method#setColors#0;class#LayerDisplay#0" />
+            <element signature="method#setRGBs#1;class#LayerDisplay#0" />
+            <element signature="method#getRGBs#0;class#LayerDisplay#0" />
+            <element signature="method#printRGBs#0;class#LayerDisplay#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Java/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="197" selection-start-line="197" selection-end-line="197" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/color.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="1122" selection-start-line="1122" selection-end-line="1122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Java/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/beans/property/ObjectPropertyBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo3d/MoleculeSampleApp1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo3d/Fx3DShapeExample1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="method#Frame#0;class#Frame#0" />
+            <element signature="method#setRGBs#0;class#Frame#0" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="method#setFill#0;class#Frame#0" />
+            <element signature="method#clone#0;class#Frame#0" />
+            <element signature="method#clone#1;class#Frame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/MyCustomColorPicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="126" column="42" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Java/jdk-10.0.2/lib/src.zip!/javafx.base/com/sun/javafx/event/EventHandlerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="190" selection-start-line="190" selection-end-line="190" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo3d/Cube3D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/AnimationCreator10.jnlp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Java/jdk-10.0.2/lib/src.zip!/javafx.graphics/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="2504" column="16" selection-start-line="2504" selection-start-column="16" selection-end-line="2504" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo3d/View3D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="133" column="34" selection-start-line="133" selection-start-column="29" selection-end-line="133" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createMaterial#0;class#View3D#0" />
+            <element signature="method#handleKeyboard#0;class#View3D#0" />
+            <element signature="method#setLEDs#0;class#View3D#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/LayerDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="58" column="66" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
+          <folding>
+            <element signature="method#LedDrag#0;class#LayerDisplay#0" />
+            <element signature="method#LedClicked#0;class#LayerDisplay#0" />
+            <element signature="method#setRGBs#0;class#LayerDisplay#0" />
+            <element signature="method#setLed#0;class#LayerDisplay#0" />
+            <element signature="method#getColors#0;class#LayerDisplay#0" />
+            <element signature="method#setColors#0;class#LayerDisplay#0" />
+            <element signature="method#setRGBs#1;class#LayerDisplay#0" />
+            <element signature="method#getRGBs#0;class#LayerDisplay#0" />
+            <element signature="method#printRGBs#0;class#LayerDisplay#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/AnimationCreatorRGB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="83" column="114" selection-start-line="83" selection-start-column="114" selection-end-line="83" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fx/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="575" column="46" selection-start-line="575" selection-start-column="46" selection-end-line="576" selection-end-column="29" />
+          <folding>
+            <element signature="e#2273#2437#0" />
+            <element signature="e#11655#11923#0" />
+            <element signature="e#11929#12164#0" />
+            <element signature="e#12170#12704#0" />
+            <element signature="e#12710#13805#0" />
+            <element signature="e#13811#14245#0" />
+            <element signature="e#14251#14572#0" />
+            <element signature="e#14578#14963#0" />
+            <element signature="e#14969#15427#0" />
+            <element signature="e#15433#16486#0" />
+            <element signature="e#22350#22577#0" />
+            <element signature="e#22583#23204#0" />
+            <element signature="e#23209#23462#0" />
+            <element signature="e#23467#24122#0" />
+            <element signature="e#24128#24364#0" />
+            <element signature="e#24370#25110#0" />
+            <element signature="e#25336#25455#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnimationCreator.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>AnimationCreator</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>mysql-connector-java-5.1.46-bin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>AnimationCreator</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

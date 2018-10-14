@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="AnimationCreator">
+    <output-path>$PROJECT_DIR$/build</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="fx.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="AnimationCreator" />
+        <option name="vendor" value="" />
+        <option name="version" value="1.1" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="AnimationCreator10.jar">
+        <element id="module-output" name="AnimationCreator" />
+      </element>
+    </root>
+  </artifact>
+</component>
