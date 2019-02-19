@@ -476,7 +476,6 @@ public class Main extends Application
         File animFile=fileChooser.showOpenDialog(window);
         if(animFile!=null)
         {
-
             frames=new ArrayList<>();
             try
             {
@@ -496,14 +495,8 @@ public class Main extends Application
                 String[] type=reader.readLine().split("//|[x]");
                 SIZE=Integer.parseInt(type[1]);
                 initCube();
-                if(type[2].equals("RGB"))
-                {
-                    isRGB=true;
-                }
-                else  if(type[2].equals("Mono"))
-                {
-                    isRGB=false;
-                }
+                isRGB=type[2].matches("RGB.*");
+
                 //FrameCount
                 text=reader.readLine();
                 String[] frames=text.split(" ");
@@ -520,6 +513,8 @@ public class Main extends Application
                 frames=text.split(" ");
                 frameTime.set(Integer.parseInt(frames[frames.length-1]));
 
+                //region Old RGB
+                /*
                 int k=-1;
                 reader.readLine();
                 // repeat until all lines is read
@@ -534,8 +529,7 @@ public class Main extends Application
                     {
                         split[i-1]=name[i];
                     }
-                   // if(split.length!=SIZE*SIZE*SIZE*3)
-                    //    break;
+
                     k++;
                     int[][] frameRGB=new int[SIZE][SIZE*SIZE];
                     final double scale =(255.0/4095);
@@ -548,11 +542,7 @@ public class Main extends Application
 
                                 if(isRGB)
                                 {
-                                    //RGB
-                                    /*
-                                    int rgb=(int) (scale * Integer.parseInt(split[layer * SIZE * SIZE * 3 + i * 3]));
-                                    rgb=(rgb << 8) + (int) (scale * Integer.parseInt(split[layer * SIZE * SIZE * 3 + i * 3 + 1]));
-                                    rgb=(rgb << 8) + (int) (scale * Integer.parseInt(split[layer * SIZE * SIZE * 3 + i * 3 + 2]));*/
+
                                     //8BIT RGB
                                     int rgb8bit=Integer.parseInt(split[layer * SIZE * SIZE  + i ]);
                                     int red=(int) ((rgb8bit>>5)*RGtoRGB);
@@ -583,9 +573,78 @@ public class Main extends Application
                         this.frames.get(k).setRGBs(frameRGB[layer],layer);
                     }
                 }
-                reader.close();
+                reader.close();*/
+                //endregion
+                int k=-1;
+                reader.readLine();
+                // repeat until all lines is read
+                while ((text = reader.readLine()) != null) {
+                    // String[] split=StringUtils.splitString(text,"[,{};]");
+                    String[] code=text.split("[{,}]");
+                    if(code.length==0)
+                        break;
+                    String[] split=new String[code.length - 1];
+                    for(int i=1; i<code.length; i++) {
+                        split[i - 1]=code[i].replace("B","");
+                    }
+                    k++;
+                    int[][] frameRGB=new int[SIZE][SIZE * SIZE];
+                    //final double scale=(255.0 / 4095);
+                    int color=0;
+                    int x=0;
+                    int y=0;
+                    int l=0;
+                    for(int colorByte=0; colorByte<split.length; colorByte++) {
+                        for(int bit=0; bit<8; bit++) {
+                            if(l==SIZE - 1) {
+                                System.out.println("LAST LAYER");
+                            }
+                            try {
+                                if(split[colorByte].matches(".*;.*"))
+                                    break;
+                                //8BIT RGB
+                                int rgbit=Integer.parseInt(split[colorByte],2);
+                                switch(color){
+                                    case 0: //RED
+                                        frameRGB[l][y*SIZE+x]=frameRGB[l][y*SIZE+x]|(((rgbit>>(7-bit)&1)*255)<<16);
+                                        break;
+                                    case 1: //GREEN
+                                        frameRGB[l][y*SIZE+x]=frameRGB[l][y*SIZE+x]|(((rgbit>>(7-bit)&1)*255)<<8);
+                                        break;
+                                    case 2: //BLUE
+                                        frameRGB[l][y*SIZE+x]=frameRGB[l][y*SIZE+x]|(((rgbit>>(7-bit)&1)*255));
+                                        break;
+                                }
+                                if(++color==3){
+                                    color=0;
+                                    if(++x==SIZE){
+                                        x=0;
+                                        if(++y==SIZE){
+                                            y=0;
+                                            this.frames.get(k).setRGBs(frameRGB[l], l);
+                                            if(++l==SIZE){
+                                                l=0;
+                                            }
+                                        }
+                                    }
+                                }
+                                //java.awt.Color col=new java.awt.Color(red, green, blue);
+                                // System.out.println(String.format("0x%08X", isRGB));
+                                //frameRGB[l][y*SIZE+x]=col.getRGB();
+                            }
+                            catch(Exception e) {
+                                e.printStackTrace();
+                                infoText.setStyle("-fx-text-fill: red");
+                                infoText.setText(e.getMessage());
+                            }
+                        }
+                    }
+                    //this.frames.get(frameCount-1).setRGBs(frameRGB[l], l);
+                }
 
-                spinnerValueFactory.setMax(k);
+
+                reader.close();
+                spinnerValueFactory.setMax(k-1);
                 spinnerValueFactory.setValue(0);
                 currFrame=0;
                 reloadFrame();
@@ -619,7 +678,8 @@ public class Main extends Application
             if(saveFile!=null)
             {
                 System.out.println("Saving "+saveFile.getAbsoluteFile()+" for "+SIZE+"x"+SIZE+"x"+SIZE+(isRGB?"RGB":"Mono")+" Cube...");
-                AnimationCreatorRGB.processAnimation(frames, saveFile, SIZE, isRGB,frameTime.get());
+                //AnimationCreatorRGB.processAnimation(frames, saveFile, SIZE, isRGB,frameTime.get());
+                AnimationCreatorRGB.processAnimationRGBit(frames, saveFile, SIZE, isRGB,frameTime.get());
             }
         }
         catch(IOException e)

@@ -90,6 +90,29 @@ static int LEDs;
            // System.out.println("Wrote " + image.getWidth() + " frames to " + outputName);
     }
 
+    public static void processAnimationRGBit(ArrayList<Frame> frames, File file, int size, boolean rgb, int frameTime) throws IOException
+    {
+        String name = file.getName();
+        int pos = name.lastIndexOf(".");
+        if (pos > 0)
+            name = name.substring(0, pos);
+
+        String varName = "ani_" + name.toLowerCase();
+        String outputName = name + ".h";
+        System.out.println("\tWriting " + file.getAbsoluteFile());
+
+        PrintStream output = new PrintStream(file);
+        output.println("//" + size+"x"+(rgb?"RGB":"Mono"));
+        output.println("#define " + varName.toUpperCase() + "_FRAMES " +frames.size());
+        output.println("#define " + varName.toUpperCase() + "_FRAMETIME " +frameTime);
+        output.println("const uint8_t " + varName + "["+ varName.toUpperCase() + "_FRAMES][CUBE_SIZE*CUBE_SIZE*CUBE_SIZE*3/8] PROGMEM = {");
+        for (int w = 0; w < frames.size(); w++)
+            parseFrameRGBit(frames.get(w).getRGBS(), output,rgb);
+        output.println("};");
+        output.close();
+        System.out.println("\tWrite complete");
+        // System.out.println("Wrote " + image.getWidth() + " frames to " + outputName);
+    }
     // Returns true if the specified format name can be read
 
     public static double rgbToGrayscaleIntensity(int rgb) {
@@ -103,6 +126,7 @@ static int LEDs;
         int blue = (int)((c.getBlue() * 4) / 256);
         return (int)((red << 5) | (green << 2) | blue);
     }
+
 /*
     public static void parseRow(int[] rowRGB, PrintStream output) {
         output.print("\t{");
@@ -138,6 +162,44 @@ static int LEDs;
         output.print("},");
         output.println();
     }
-
-
+    public static void parseFrameRGBit(int[][] rowRGB, PrintStream output,boolean rgb) {
+        output.print("{");
+        int bit=0;
+        //output.print("B");
+        for(int l=0; l<rowRGB.length; l++) {
+            for(int i=0; i < rowRGB[0].length; i++) {
+                Color c=new Color(rowRGB[l][i]);
+                for(int j=0; j<3; j++) {
+                    if(bit==0)
+                        output.print("B");
+                    switch(j){
+                        case 0:
+                            if(c.getRed()>0)
+                                output.print("1");
+                            else
+                                output.print("0");
+                            break;
+                        case 1:
+                            if(c.getGreen()>0)
+                                output.print("1");
+                            else
+                                output.print("0");
+                            break;
+                        case 2:
+                            if(c.getBlue()>0)
+                                output.print("1");
+                            else
+                                output.print("0");
+                            break;
+                    }
+                    if(++bit==8) {
+                        bit=0;
+                        output.print(",");
+                    }
+                }
+            }
+        }
+        output.print("},");
+        output.println();
+    }
 }
