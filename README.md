@@ -1,5 +1,6 @@
-# AnimationCreator
-    Java Animation Creator for LED Cubes (RGB/Monochrome) controlled by Arduino
-    Generates uint16 Arrays representing Animation (Values for each LED per Frame) of Size: 
-    FRAMES*CUBE_SIZE*CUBE_SIZE*CUBE_SIZE*3|1(RGB/Mono)
-    Uses Arduinos "PROGMEM" for storing the Animations
+# AnimationCreator 
+### Java Animation Creator for LED Cubes (RGB/Monochrome) controlled by Arduino
+#### Used for making Animations for [RGBCube_Arduino](https://github.com/PhilKes/RGBCube_Arduino)
+    Animations are stored in Arduinos "PROGMEM"
+#### See Instructables for details: [PhilKey Instructable](https://www.instructables.com/id/RGB-LED-Cube-With-Bluetooth-App-AnimationCreator/)
+<img src="https://i.imgur.com/WJzNzW5.png" width="680">
