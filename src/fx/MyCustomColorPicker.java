@@ -1,7 +1,5 @@
 package fx;
 
-import javafx.*;
-
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.ObjectBinding;
 import javafx.beans.property.DoubleProperty;
@@ -23,12 +21,11 @@ import javafx.util.StringConverter;
 import java.util.ArrayList;
 
 
-public class MyCustomColorPicker extends VBox
-{
+public class MyCustomColorPicker extends VBox {
 
-    private final ObjectProperty<Color> currentColorProperty =
+    private final ObjectProperty<Color> currentColorProperty=
             new SimpleObjectProperty<>(Color.WHITE);
-    private final ObjectProperty<Color> customColorProperty =
+    private final ObjectProperty<Color> customColorProperty=
             new SimpleObjectProperty<>(Color.TRANSPARENT);
 
     private Pane colorRect;
@@ -39,12 +36,13 @@ public class MyCustomColorPicker extends VBox
     private final Region colorBarIndicator;
     private Pane newColorRect;
 
-    private DoubleProperty hue = new SimpleDoubleProperty(-1);
-    private DoubleProperty sat = new SimpleDoubleProperty(-1);
-    private DoubleProperty bright = new SimpleDoubleProperty(-1);
+    private DoubleProperty hue=new SimpleDoubleProperty(-1);
+    private DoubleProperty sat=new SimpleDoubleProperty(-1);
+    private DoubleProperty bright=new SimpleDoubleProperty(-1);
 
-    private DoubleProperty alpha = new SimpleDoubleProperty(100) {
-        @Override protected void invalidated() {
+    private DoubleProperty alpha=new SimpleDoubleProperty(100) {
+        @Override
+        protected void invalidated() {
             setCustomColor(new Color(getCustomColor().getRed(), getCustomColor().getGreen(),
                     getCustomColor().getBlue(), clamp(alpha.get() / 100)));
         }
@@ -54,30 +52,31 @@ public class MyCustomColorPicker extends VBox
 
         getStyleClass().add("my-custom-color");
 
-        VBox box = new VBox();
+        VBox box=new VBox();
 
         box.getStyleClass().add("color-rect-pane");
         customColorProperty().addListener((ov, t, t1) -> colorChanged());
 
-        colorRectIndicator = new Region();
+        colorRectIndicator=new Region();
         colorRectIndicator.setId("color-rect-indicator");
         colorRectIndicator.setManaged(false);
         colorRectIndicator.setMouseTransparent(true);
         colorRectIndicator.setCache(true);
 
-        final Pane colorRectOpacityContainer = new StackPane();
+        final Pane colorRectOpacityContainer=new StackPane();
 
-        colorRect = new StackPane();
+        colorRect=new StackPane();
         colorRect.getStyleClass().addAll("color-rect", "transparent-pattern");
 
-        Pane colorRectHue = new Pane();
+        Pane colorRectHue=new Pane();
         colorRectHue.backgroundProperty().bind(new ObjectBinding<Background>() {
 
             {
                 bind(hue);
             }
 
-            @Override protected Background computeValue() {
+            @Override
+            protected Background computeValue() {
                 return new Background(new BackgroundFill(
                         Color.hsb(hue.getValue(), 1.0, 1.0),
                         CornerRadii.EMPTY, Insets.EMPTY));
@@ -85,7 +84,7 @@ public class MyCustomColorPicker extends VBox
             }
         });
 
-        colorRectOverlayOne = new Pane();
+        colorRectOverlayOne=new Pane();
         colorRectOverlayOne.getStyleClass().add("color-rect");
         colorRectOverlayOne.setBackground(new Background(new BackgroundFill(
                 new LinearGradient(0, 0, 1, 0, true, CycleMethod.NO_CYCLE,
@@ -93,15 +92,15 @@ public class MyCustomColorPicker extends VBox
                         new Stop(1, Color.rgb(255, 255, 255, 0))),
                 CornerRadii.EMPTY, Insets.EMPTY)));
 
-        EventHandler<MouseEvent> rectMouseHandler = event -> {
-            final double x = event.getX();
-            final double y = event.getY();
+        EventHandler<MouseEvent> rectMouseHandler=event -> {
+            final double x=event.getX();
+            final double y=event.getY();
             sat.set(clamp(x / colorRect.getWidth()) * 100);
             bright.set(100 - (clamp(y / colorRect.getHeight()) * 100));
             updateHSBColor();
         };
 
-        colorRectOverlayTwo = new Pane();
+        colorRectOverlayTwo=new Pane();
         colorRectOverlayTwo.getStyleClass().addAll("color-rect");
         colorRectOverlayTwo.setBackground(new Background(new BackgroundFill(
                 new LinearGradient(0, 0, 0, 1, true, CycleMethod.NO_CYCLE,
@@ -110,16 +109,16 @@ public class MyCustomColorPicker extends VBox
         colorRectOverlayTwo.setOnMouseDragged(rectMouseHandler);
         colorRectOverlayTwo.setOnMousePressed(rectMouseHandler);
 
-        Pane colorRectBlackBorder = new Pane();
+        Pane colorRectBlackBorder=new Pane();
         colorRectBlackBorder.setMouseTransparent(true);
         colorRectBlackBorder.getStyleClass().addAll("color-rect", "color-rect-border");
 
-        colorBar = new Pane();
+        colorBar=new Pane();
         colorBar.getStyleClass().add("color-bar");
         colorBar.setBackground(new Background(new BackgroundFill(createHueGradient(),
                 CornerRadii.EMPTY, Insets.EMPTY)));
 
-        colorBarIndicator = new Region();
+        colorBarIndicator=new Region();
         colorBarIndicator.setId("color-bar-indicator");
         colorBarIndicator.setMouseTransparent(true);
         colorBarIndicator.setCache(true);
@@ -132,22 +131,24 @@ public class MyCustomColorPicker extends VBox
                 hue.divide(360).multiply(colorBar.widthProperty()));
         colorRectOpacityContainer.opacityProperty().bind(alpha.divide(100));
 
-        EventHandler<MouseEvent> barMouseHandler =event -> {
-            final double x = event.getX();
+        EventHandler<MouseEvent> barMouseHandler=event -> {
+            final double x=event.getX();
             hue.set(clamp(x / colorRect.getWidth()) * 360);
             updateHSBColor();
         };
 
         colorBar.setOnMouseDragged(barMouseHandler);
         colorBar.setOnMousePressed(barMouseHandler);
-        newColorRect = new Pane();
+        newColorRect=new Pane();
         newColorRect.getStyleClass().add("color-new-rect");
         newColorRect.setId("new-color");
         newColorRect.backgroundProperty().bind(new ObjectBinding<Background>() {
             {
                 bind(customColorProperty);
             }
-            @Override protected Background computeValue() {
+
+            @Override
+            protected Background computeValue() {
                 return new Background(new BackgroundFill(customColorProperty.get(), CornerRadii.EMPTY, Insets.EMPTY));
             }
         });
@@ -165,20 +166,18 @@ public class MyCustomColorPicker extends VBox
         rgbText.textProperty().bindBidirectional(customColorProperty, new StringConverter<Color>() {
             @Override
             public String toString(Color color) {
-                return String.format( "#%02X%02X%02X",
-                        (int)( color.getRed() * 255 ),
-                        (int)( color.getGreen() * 255 ),
-                        (int)( color.getBlue() * 255 ) );
+                return String.format("#%02X%02X%02X",
+                        (int) (color.getRed() * 255),
+                        (int) (color.getGreen() * 255),
+                        (int) (color.getBlue() * 255));
             }
 
             @Override
-            public Color fromString(String string)
-            {
-                try
-                {
+            public Color fromString(String string) {
+                try {
                     return Color.web(string);
-                }catch(Exception e)
-                {
+                }
+                catch(Exception e) {
                     return Color.WHITE;
                 }
             }
@@ -206,40 +205,40 @@ public class MyCustomColorPicker extends VBox
         prefColors.add(createColorButton(0xFFFFFF));
 
         colsPref.getChildren().addAll(rgbText);
-        for(Button button:prefColors)
+        for(Button button : prefColors)
             colsPref.getChildren().add(button);
-        box.getChildren().addAll(colorBar, colorRect, newColorRect,colsPref);
+        box.getChildren().addAll(colorBar, colorRect, newColorRect, colsPref);
         getChildren().add(box);
 
-        if (currentColorProperty.get() == null) {
+        if(currentColorProperty.get()==null) {
             currentColorProperty.set(Color.TRANSPARENT);
         }
         updateValues();
 
     }
-    private Button createColorButton(int rgb)
-    {
+
+    private Button createColorButton(int rgb) {
         Button col=new Button();
-        col.setOnAction(ev->setCustomColor((Color)col.getTextFill()));
-        String hex = Integer.toHexString(rgb);
+        col.setOnAction(ev -> setCustomColor((Color) col.getTextFill()));
+        String hex=Integer.toHexString(rgb);
         String colorHex="";
-        for(int i=0; i<6-hex.length(); i++)
-        {
+        for(int i=0; i<6 - hex.length(); i++) {
             colorHex+="0";
         }
-        colorHex="#"+colorHex+hex;
+        colorHex="#" + colorHex + hex;
 
         col.setMinWidth(12);
-        col.setStyle("-fx-background-color:"+colorHex+";-fx-text-fill:"+colorHex+";");
+        col.setStyle("-fx-background-color:" + colorHex + ";-fx-text-fill:" + colorHex + ";");
         return col;
     }
+
     private void updateValues() {
         hue.set(getCurrentColor().getHue());
-        sat.set(getCurrentColor().getSaturation()*100);
-        bright.set(getCurrentColor().getBrightness()*100);
-        alpha.set(getCurrentColor().getOpacity()*100);
+        sat.set(getCurrentColor().getSaturation() * 100);
+        bright.set(getCurrentColor().getBrightness() * 100);
+        alpha.set(getCurrentColor().getOpacity() * 100);
         setCustomColor(Color.hsb(hue.get(), clamp(sat.get() / 100),
-                clamp(bright.get() / 100), clamp(alpha.get()/100)));
+                clamp(bright.get() / 100), clamp(alpha.get() / 100)));
     }
 
     private void colorChanged() {
@@ -249,7 +248,7 @@ public class MyCustomColorPicker extends VBox
     }
 
     private void updateHSBColor() {
-        Color newColor = Color.hsb(hue.get(), clamp(sat.get() / 100),
+        Color newColor=Color.hsb(hue.get(), clamp(sat.get() / 100),
                 clamp(bright.get() / 100), clamp(alpha.get() / 100));
         setCustomColor(newColor);
     }
@@ -261,16 +260,16 @@ public class MyCustomColorPicker extends VBox
     }
 
     static double clamp(double value) {
-        return value < 0 ? 0 : value > 1 ? 1 : value;
+        return value<0 ? 0 : value>1 ? 1 : value;
     }
 
     private static LinearGradient createHueGradient() {
         double offset;
-        Stop[] stops = new Stop[255];
-        for (int x = 0; x < 255; x++) {
-            offset = (double)((1.0 / 255) * x);
-            int h = (int)((x / 255.0) * 360);
-            stops[x] = new Stop(offset, Color.hsb(h, 1.0, 1.0));
+        Stop[] stops=new Stop[255];
+        for(int x=0; x<255; x++) {
+            offset=(double) ((1.0 / 255) * x);
+            int h=(int) ((x / 255.0) * 360);
+            stops[x]=new Stop(offset, Color.hsb(h, 1.0, 1.0));
         }
         return new LinearGradient(0f, 0f, 1f, 0f, true, CycleMethod.NO_CYCLE, stops);
     }
@@ -284,7 +283,7 @@ public class MyCustomColorPicker extends VBox
         return currentColorProperty.get();
     }
 
-    final ObjectProperty<Color> customColorProperty() {
+    public final ObjectProperty<Color> customColorProperty() {
         return customColorProperty;
     }
 
